@@ -167,3 +167,98 @@ body {
     background-color: var(--light-pink);
 }
 
+
+/* =========================================
+   PAGE 1 - HERO
+========================================= */
+
+.hero {
+    min-height: 100vh;
+
+    padding: 120px 20px 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            #fff0f6 0%,
+            #ffffff 55%
+        );
+}
+
+
+.hero-content {
+    max-width: 900px;
+}
+
+
+.welcome-text {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    color: var(--pink);
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.hero h1 {
+    margin-bottom: 10px;
+
+    color: var(--black);
+
+    font-size: clamp(2.7rem, 7vw, 5.2rem);
+
+    line-height: 1.1;
+}
+
+
+.hero h1 span {
+    color: var(--pink);
+}
+
+
+.hero h2 {
+    margin-bottom: 20px;
+
+    color: var(--black);
+
+    font-size: clamp(1.4rem, 3vw, 2rem);
+
+    font-weight: 500;
+}
+
+
+.hero-description {
+    max-width: 650px;
+
+    margin: 0 auto 35px;
+
+    color: var(--gray);
+
+    font-size: 1.05rem;
+}
+
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
