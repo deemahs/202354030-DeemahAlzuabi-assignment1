@@ -61,3 +61,10 @@ contactForm.addEventListener("submit", function (event) {
     contactForm.reset();
 
 });
+
+// ========================================
+// Current Year
+// ========================================
+
+year.textContent =
+    new Date().getFullYear();
