@@ -774,3 +774,184 @@ body {
 .footer p {
     margin: 3px 0;
 }
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+body.dark-mode {
+    --white: #111111;
+    --black: #ffffff;
+
+    --gray: #c5c5c5;
+    --light-gray: #181818;
+    --border: #333333;
+    --light-pink: #2b1720;
+}
+
+
+body.dark-mode .header {
+    background-color: rgba(17, 17, 17, 0.95);
+}
+
+
+body.dark-mode .hero {
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            #2b1720 0%,
+            #111111 55%
+        );
+}
+
+
+body.dark-mode .footer {
+    background-color: #080808;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+    .about-content {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        text-align: center;
+    }
+
+
+    .skills {
+        justify-content: center;
+    }
+
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .profile-placeholder {
+        width: 230px;
+        height: 230px;
+
+        font-size: 5rem;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        height: auto;
+
+        min-height: 75px;
+
+        flex-wrap: wrap;
+
+        padding: 15px 0;
+    }
+
+
+    .nav-links {
+        order: 3;
+
+        width: 100%;
+
+        margin-top: 12px;
+
+        justify-content: center;
+
+        gap: 18px;
+    }
+
+
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
+
+    .hero {
+        padding-top: 150px;
+    }
+
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .btn {
+        width: 100%;
+
+        max-width: 280px;
+
+        text-align: center;
+    }
+
+
+    .section {
+        min-height: auto;
+
+        padding: 110px 0 70px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+
+
+    .profile-placeholder {
+        width: 190px;
+        height: 190px;
+
+        font-size: 4rem;
+
+        box-shadow:
+            10px 10px 0 var(--black);
+    }
+
+
+    .about-text {
+        text-align: left;
+    }
+
+
+    .skills {
+        justify-content: flex-start;
+    }
+
+
+    .project-card {
+        padding: 25px;
+    }
+
+
+    .contact-form {
+        padding: 25px 20px;
+    }
+
+
+    .scroll-down {
+        display: none;
+    }
+
+}
