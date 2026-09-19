@@ -34,3 +34,30 @@ themeButton.addEventListener("click", function () {
     }
 
 });
+
+
+// ========================================
+// Contact Form
+// ========================================
+
+contactForm.addEventListener("submit", function (event) {
+
+    // Prevent the form from actually submitting
+    event.preventDefault();
+
+
+    const name =
+        document.getElementById("name")
+            .value
+            .trim();
+
+
+    formMessage.textContent =
+        "Thank you, " + name +
+        "! Your message has been received.";
+
+
+    // Clear form fields
+    contactForm.reset();
+
+});
